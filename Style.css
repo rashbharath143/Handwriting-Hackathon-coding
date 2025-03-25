@@ -1,0 +1,63 @@
+/* Custom styles to complement the Bootstrap styling */
+
+body {
+    min-height: 100vh;
+    background-color: var(--bs-dark);
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#drawingCanvas {
+    background-color: #000;
+    border-radius: 5px;
+    cursor: crosshair;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+    max-height: 280px;
+    margin: 0 auto;
+}
+
+#previewImage {
+    max-height: 280px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+#placeholderPreview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    width: 100%;
+    border: 2px dashed var(--bs-secondary);
+    border-radius: 5px;
+}
+
+#recognizedDigit {
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .row.mb-4 > .col-md-6:first-child {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.drawing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
